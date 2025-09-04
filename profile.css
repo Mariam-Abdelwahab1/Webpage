@@ -1,0 +1,325 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: linear-gradient(rgba(36, 75, 95, 0.5)), url('bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+header {
+    background-color: rgba(26, 54, 68, 0.9);
+    color: white;
+    padding: 10px 20px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+}
+
+header h1 {
+    font-size: 30px;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.9);
+    font-family: "Story Script", sans-serif;
+}
+
+.story-script-regular {
+    font-family: "Story Script", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #EBCB90;
+}
+
+.profile-pic {
+    text-align: center;
+    margin: 30px 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    width: 700px;
+    margin: 20px auto;
+}
+
+.profile-pic img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid rgba(26, 54, 68, 0.9);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+}
+
+.profile-pic h1 {
+    color: rgba(26, 54, 68, 0.9);
+    margin-top: 10px;
+    font-family: "Story Script", sans-serif;
+    font-size: 30px;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.profile-pic img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+
+section {
+    scroll-margin-top: 150px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    width: 900px;
+}
+
+section h2 {
+    color: rgba(26, 54, 68, 0.9);
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-family: "Story Script", sans-serif;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.skills {
+    list-style: none;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 15px;
+}
+
+.skill {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+    transition: background-color 0.3s;
+}
+
+.skill:hover {
+    background-color: rgba(244, 195, 135, 0.4);
+    transform: translateY(-5px) scale(1.05);
+}
+
+.projects {
+    list-style: none;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+    transition: background-color 0.3s;
+}
+
+.project:hover {
+    background-color: rgba(244, 195, 135, 0.4);
+    transform: translateY(-5px) scale(1.05);
+}
+
+.project h3 {
+    color: rgba(26, 54, 68, 0.9);
+    font-size: 22px;
+    font-family: "Story Script", sans-serif;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+button {
+    background-color: rgba(26, 54, 68, 0.9);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+#achievements {
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    width: 900px;
+}
+
+#achievements h2 {
+    color: rgba(26, 54, 68, 0.9);
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-family: "Story Script", sans-serif;
+    text-align: center;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background: rgba(26, 54, 68, 0.9);
+    transform: translateX(-50%);
+}
+
+
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.timeline-item.left {
+    left: 0;
+    text-align: right;
+}
+
+.timeline-item.right {
+    left: 50%;
+    text-align: left;
+}
+
+
+.timeline-item .content {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+    position: relative;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.timeline-item .content:hover {
+    background-color: rgba(244, 195, 135, 0.4);
+    transform: translateY(-5px) scale(1.05);
+}
+
+
+.timeline-item::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    background: #EBCB90;
+    border: 3px solid rgba(26, 54, 68, 0.9);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.timeline-item.left::after {
+    right: -10px;
+}
+
+.timeline-item.right::after {
+    left: -10px;
+}
+
+
+@media (max-width: 768px) {
+    #achievements {
+        width: 95%;
+    }
+
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 25px;
+    }
+
+    .timeline-item.left,
+    .timeline-item.right {
+        left: 0;
+        text-align: left;
+    }
+
+    .timeline-item::after {
+        left: 0;
+    }
+}
+
+
+form input {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px;
+}
+
+form textarea {
+    width: 800px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 10px;
+}
+
+footer {
+    background-color: rgba(26, 54, 68, 0.9);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.7);
+}
