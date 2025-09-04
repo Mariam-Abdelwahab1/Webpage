@@ -272,33 +272,6 @@ button:hover {
 }
 
 
-@media (max-width: 768px) {
-    #achievements {
-        width: 95%;
-    }
-
-    .timeline::before {
-        left: 20px;
-    }
-
-    .timeline-item {
-        width: 100%;
-        padding-left: 50px;
-        padding-right: 25px;
-    }
-
-    .timeline-item.left,
-    .timeline-item.right {
-        left: 0;
-        text-align: left;
-    }
-
-    .timeline-item::after {
-        left: 0;
-    }
-}
-
-
 form input {
     border-radius: 5px;
     padding: 10px;
@@ -322,4 +295,88 @@ footer {
     padding: 10px;
     width: 100%;
     box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+    }
+
+    header {
+        width: 100vw;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+        gap: 10px;
+        margin: 0;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    .profile-pic {
+        width: 90%;
+    }
+
+    section {
+        width: 95%;
+    }
+
+    #achievements {
+        width: 95%;
+    }
+
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 25px;
+    }
+
+    .timeline-item.left,
+    .timeline-item.right {
+        left: 0;
+        text-align: left;
+    }
+
+    .timeline-item::after {
+        left: 0;
+    }
+
+    .timeline-item .content {
+        margin-left: 30px;
+    }
+
+    #contact {
+        width: 95%;
+        padding: 10px;
+    }
+
+    #contact h2 {
+        font-size: 22px;
+    }
+
+    #contact textarea,
+    #contact input {
+        font-size: 14px;
+    }
+
+    #contact button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    #contact textarea {
+        width: 200px;
+        height: 80px;
+        padding: 8px;
+    }
 }
