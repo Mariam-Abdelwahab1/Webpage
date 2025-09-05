@@ -27,6 +27,7 @@ header {
     top: 0;
     bottom: 0;
     z-index: 1000;
+    width: 100%;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
 }
 
@@ -241,7 +242,8 @@ button:hover {
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
     position: relative;
-    transition: transform 0.3s, background-color 0.3s;
+    transition: transform 0.3s;
+    /* background-color 0.3s; */
 }
 
 .timeline-item .content:hover {
