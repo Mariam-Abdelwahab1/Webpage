@@ -29,7 +29,7 @@ if (totalPrice > 100) {
     document.writeln("<br>" + "Price with discount: " + priceWithDiscount + "<br>");
 };
 
-document.writeln("<br><br>");
+document.writeln("<br>");
 
 document.writeln("Products in stock: <br>");
 
@@ -49,7 +49,7 @@ if (product_3.inStook) {
     document.writeln(product_3.name + " is out of stock <br>");
 }
 
-document.writeln("<br><br>");
+document.writeln("<br>");
 
 
 if (cart[0].inStook === true && cart[0].price < 50) {
@@ -71,35 +71,35 @@ if (cart[2].inStook === true && cart[2].price < 50) {
     }
 }
 
-document.writeln("<br><br>");
+document.writeln("<br>");
 
 document.writeln("Budget categories: <br>");
 
 if (cart[0].price < 50) {
-    document.writeln(cart[0].name + " Low Budget <br>");
+    document.writeln(cart[0].name + " is in the Low Budget category.<br>");
 } else if (cart[0].price > 50 && cart[0].price < 100) {
-    document.writeln(cart[0].name + " Medium Budget <br>");
+    document.writeln(cart[0].name + " is in the Medium Budget category.<br>");
 } else {
-    document.writeln(cart[0].name + " High Budget <br>");
+    document.writeln(cart[0].name + " is in the High Budget category.<br>");
 }
 
 if (cart[1].price < 50) {
-    document.writeln(cart[1].name + " Low Budget <br>");
+    document.writeln(cart[1].name + " is in the Low Budget category.<br>");
 } else if (cart[1].price > 50 && cart[1].price < 100) {
-    document.writeln(cart[1].name + " Medium Budget <br>");
+    document.writeln(cart[1].name + " is in the Medium Budget category.<br>");
 } else {
-    document.writeln(cart[1].name + " High Budget <br>");
+    document.writeln(cart[1].name + " is in the High Budget category.<br>");
 }
 
 if (cart[2].price < 50) {
-    document.writeln(cart[2].name + " Low Budget <br>");
+    document.writeln(cart[2].name + " is in the Low Budget category.<br>");
 } else if (cart[2].price > 50 && cart[2].price < 100) {
-    document.writeln(cart[2].name + " Medium Budget <br>");
+    document.writeln(cart[2].name + " is in the Medium Budget category.<br>");
 } else {
-    document.writeln(cart[2].name + " High Budget <br>");
+    document.writeln(cart[2].name + " is in the High Budget category.<br>");
 }
 
-document.writeln("<br><br>");
+document.writeln("<br>");
 
 let category = "clothes";
 
